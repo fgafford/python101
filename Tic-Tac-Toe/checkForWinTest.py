@@ -16,22 +16,16 @@ if out checkForWin function calls any other function we will need to
 include those functions here as well (like the match function)
 '''
 
+# This is the match function we wrote in calss
+# we also forgot to check to make sure that the space is not empty
+# if all three spaces are empty they still match so we have to check
+# that as well as make sure that a == b and b == c
 def match(a,b,c):
 	return (a != ' ') and (a == b and b == c)
 
 # Your check function here
 def checkForWin(b):
-			# Horizontal lines
-	return (match(b[0],b[1],b[2]) or
-			match(b[3],b[4],b[5]) or
-			match(b[6],b[7],b[8]) or
-			# Vertical lines
-			match(b[0],b[3],b[6]) or
-			match(b[1],b[4],b[7]) or
-			match(b[2],b[5],b[8]) or
-			# Diagonal lines
-			match(b[0],b[4],b[8]) or
-			match(b[2],b[4],b[6]))
+	# WRITE YOUR FUNCTION HERE!!!
 
 '''
 This is the function that runs the actual test.
