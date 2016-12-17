@@ -25,7 +25,17 @@ def match(a,b,c):
 
 # Your check function here
 def checkForWin(b):
-	# WRITE YOUR FUNCTION HERE!!!
+			# Horizontal lines
+	return (match(b[0],b[1],b[2]) or
+			match(b[3],b[4],b[5]) or
+			match(b[6],b[7],b[8]) or
+			# Vertical lines
+			match(b[0],b[3],b[6]) or
+			match(b[1],b[4],b[7]) or
+			match(b[2],b[5],b[8]) or
+			# Diagonal lines
+			match(b[0],b[4],b[8]) or
+			match(b[2],b[4],b[6]))
 
 '''
 This is the function that runs the actual test.
