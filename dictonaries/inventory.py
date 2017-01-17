@@ -14,11 +14,7 @@ backpack: ['xylophone', 'dagger', 'bedroll', 'bread loaf']
 '''
 print('# 1')
 def printInventory():
-	print('=== Inventory ===')
-	print('gold:',inventory['gold'])
-	print('pouch:',inventory['pouch'])
-	print('backpack:',inventory['backpack'])
-	print('=================')
+	# ... your code here ...
 
 printInventory()
 
@@ -32,7 +28,7 @@ backpack: ['xylophone', 'dagger', 'bedroll', 'bread loaf']
 '''
 print('# 2')
 def addGold(amount):
-	inventory['gold'] = inventory.get('gold') + amount
+	# ... your code here ...
 
 addGold(250)
 printInventory()
@@ -47,7 +43,7 @@ backpack: ['xylophone', 'dagger', 'bedroll', 'bread loaf','flute']
 '''
 print('# 3')
 def addToBackpack(item):
-	inventory['backpack'].append(item)
+	# ... your code here ...
 
 addToBackpack('flute')
 printInventory()
@@ -62,7 +58,7 @@ backpack: ['xylophone', 'dagger', 'bedroll', 'flute']
 '''
 print('# 4')
 def removeFromBackpack(item):
-	inventory['backpack'].remove(item)
+	# ... your code here ...
 
 removeFromBackpack('bread loaf')
 printInventory()
@@ -78,8 +74,7 @@ backpack: ['xylophone', 'dagger', 'bedroll', 'flute', 'flint']
 '''
 print('# Bonus:')
 def moveToBackpack(item):
-	inventory['pouch'].remove(item)
-	inventory['backpack'].append(item)
+	# ... your code here ...
 
 moveToBackpack('flint')
 printInventory()
